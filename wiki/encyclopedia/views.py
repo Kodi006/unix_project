@@ -18,7 +18,7 @@ def converti(f):
     f=re.sub(r'\*\*([\w\W]+?)\*\*',r'<strong>\1</strong>',f)
 
     f = re.sub(r'\* (\w[^\n]+)',r'<ul><li>\1</li></ul>',f)
-    f=re.sub(r'\(([\w\W]+?)\)',r'<a href="http://127.0.0.1:8000/\1">\1</a>',f)
+    f=re.sub(r'\(([\w\W]+?)\)',r'<a href="/\1">\1</a>',f)
     return f
 
 
